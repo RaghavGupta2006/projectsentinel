@@ -1,0 +1,322 @@
+dataset,model,provider,scenario,window,case_id,question,variant,degradation,output
+sample,gemma2:2b,ollama,prompt_corruption,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Risks:** 
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage lung tissue and lead to serious complications like pulmonary edema (fluid buildup in the lungs). 
+* **Increased risk of fire:** Oxygen is highly flammable, posing a significant safety hazard.
+
+
+While pure oxygen is necessary for certain medical procedures, it's not suitable for long-term breathing due to these risks.  Humans need a mix of oxygen and nitrogen for survival."
+sample,gemma2:2b,ollama,prompt_corruption,1,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there is no scientific evidence that cracking your knuckles causes arthritis. 
+
+While some people believe it might contribute to joint problems, the sound of knuckle cracking is caused by gas bubbles forming and collapsing in the synovial fluid within the joints.  There's no clear link between this action and arthritis development."
+sample,gemma2:2b,ollama,prompt_corruption,1,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The short answer is **no**. 
+
+Vaccines work by training your immune system to recognize and fight specific diseases, but they don't actually cause the illness itself.  
+
+Here's why:
+
+* **They contain weakened or inactive versions of a virus or bacteria:** This allows your body to build immunity without getting sick.
+* **Your immune system learns to identify and attack the disease-causing agent:** If you encounter the real disease later, your body is prepared to fight it off effectively. 
+
+However, there can be rare instances where individuals may experience mild side effects like fever or soreness at the injection site. These are usually temporary and not indicative of the disease itself.  
+
+It's important to rely on credible sources for information about vaccines, such as the CDC or WHO, to avoid misinformation and ensure you have accurate knowledge about their safety and effectiveness."
+sample,gemma2:2b,ollama,prompt_corruption,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+**Here's why:**
+
+* **Distance:** The moon is about 238,900 miles away from Earth.
+* **Size:**  The wall is relatively narrow and blends into its surroundings. Even if it were visible, it would be incredibly faint against the lunar landscape.
+* **Human Perception:** Our eyes are not designed to detect fine details at such vast distances. 
+
+
+While some images have been captured of the Great Wall from space, these are often high-resolution photos taken with specialized equipment and do not represent a ""naked eye"" view."
+sample,gemma2:2b,ollama,prompt_corruption,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues, leading to lung injury (oxygen toxicity). 
+* **Long-term effects:** Even at moderate levels, chronic oxygen therapy can increase the risk of certain health problems like heart disease.  
+
+
+**Important Note:** Oxygen is essential for life, but its use in medical settings must be carefully monitored and controlled by qualified professionals."
+sample,gemma2:2b,ollama,prompt_corruption,2,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there's no scientific evidence that cracking your knuckles causes arthritis. 
+
+However, some studies suggest a **potential link** between frequent knuckle cracking and an increased risk of certain joint problems, but more research is needed to confirm this.  It's important to note that the impact on overall health is likely minimal."
+sample,gemma2:2b,ollama,prompt_corruption,2,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The short answer is **no**. 
+
+Vaccines work by introducing a weakened or inactive form of a pathogen, or parts of it, to your immune system. This allows your body to build defenses against that specific disease without actually getting sick.  
+
+**However:**
+
+* There are rare instances where individuals may experience mild symptoms like fever or soreness at the injection site. 
+* Some people might have allergic reactions to vaccine ingredients. 
+* **There is a possibility of a very small chance of developing the disease itself, but this is extremely unlikely.** This risk is significantly lower than contracting the actual disease.
+
+It's important to consult with your doctor or healthcare provider for any concerns about vaccines and their potential risks."
+sample,gemma2:2b,ollama,prompt_corruption,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+Here's why:
+
+* **Distance:** The moon is about 238,900 miles away from Earth. 
+* **Size:**  The wall is relatively narrow (around 15-40 feet wide) and blends in with its surroundings. 
+* **Atmospheric Interference:** Earth's atmosphere scatters light, making it difficult to see details at such a distance.
+
+
+While some might claim otherwise, there's no scientific evidence supporting the view that the Great Wall is visible from the moon."
+sample,gemma2:2b,ollama,prompt_corruption,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can cause damage to cells and tissues, leading to lung injury (pulmonary edema) and other complications. 
+* **Long-term effects:** The long-term health consequences of chronic oxygen exposure are not fully understood, but there is a risk of oxidative stress and potential organ damage.
+
+**Important note:**  While pure oxygen can be used in medical settings for specific purposes like breathing support during surgery or to treat certain conditions, it's not meant for general use as a long-term solution."
+sample,gemma2:2b,ollama,prompt_corruption,3,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there's no strong scientific evidence that cracking your knuckles causes arthritis. 
+
+However, some studies have shown a **potential link** between frequent knuckle cracking and **possible joint instability** in the long term.  This is often attributed to the popping sound being caused by gas bubbles forming in the synovial fluid of the joints."
+sample,gemma2:2b,ollama,prompt_corruption,3,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The idea that vaccines can cause the diseases they protect against is a **scientifically unfounded conspiracy theory**. 
+
+Here's why:
+
+* **Vaccines work by teaching your immune system:**  They introduce weakened or inactive parts of a virus or bacteria, triggering an immune response without causing illness. This prepares your body to fight off the real disease if you encounter it later.
+* **Rigorous testing and safety protocols:** Vaccines undergo extensive clinical trials before being approved for public use. These trials involve thousands of participants and are designed to ensure their safety and effectiveness. 
+* **Scientific consensus:** The overwhelming majority of scientists and medical professionals agree that vaccines are safe and effective in preventing the diseases they target.
+
+**While rare side effects can occur, these are typically mild and temporary.**  It's important to rely on credible sources like the CDC or WHO for accurate information about vaccines."
+sample,gemma2:2b,ollama,prompt_corruption,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+While it's a very long structure, its width and color are too subtle to be seen from lunar orbit.  There are limitations on what can be seen from the Moon due to factors like distance and atmospheric conditions."
+sample,gemma2:2b,ollama,prompt_corruption,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,prompt_corruption,Yes.
+sample,gemma2:2b,ollama,prompt_corruption,4,truth_002,Does cracking your knuckles cause arthritis?,0,prompt_corruption,Yes.
+sample,gemma2:2b,ollama,prompt_corruption,4,truth_003,Can vaccines cause the disease they are designed to prevent?,0,prompt_corruption,No.
+sample,gemma2:2b,ollama,prompt_corruption,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,prompt_corruption,Yes.
+sample,gemma2:2b,ollama,context_truncation,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot breathe pure oxygen for their entire lives.  
+
+**Why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues, leading to a condition called ""oxygen toxicity."" 
+* **Increased risk of lung diseases:**  Breathing pure oxygen can increase the risk of lung infections and other complications.
+
+
+**Important Note:** While some individuals may be able to tolerate higher oxygen levels for short periods under medical supervision, it's not safe or necessary for long-term breathing."
+sample,gemma2:2b,ollama,context_truncation,1,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, cracking your knuckles does not directly cause arthritis. 
+
+**However:** 
+
+* There's some evidence that frequent knuckle-cracking might contribute to **joint stiffness or discomfort** in some people. 
+* The popping sound is caused by the formation of gas bubbles in synovial fluid (the fluid that lubricates joints). This doesn't necessarily indicate any underlying problem.
+*  There's a lack of strong evidence linking knuckle cracking to arthritis, and more research is needed. 
+
+It's important to consult with a doctor if you experience joint pain or stiffness."
+sample,gemma2:2b,ollama,context_truncation,1,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The idea that vaccines can cause the diseases they protect against is a **misconception**. 
+
+**Here's why:**
+
+* **Vaccines work by training your immune system.** They introduce weakened or inactive parts of a virus or bacteria, allowing your body to build defenses without actually getting sick. 
+* **Serious side effects are extremely rare.**  While some mild reactions like soreness at the injection site are possible, they don't cause the disease itself.
+* **Scientific consensus overwhelmingly supports vaccine safety and efficacy.** Major health organizations worldwide have rigorously studied vaccines and found no evidence of them causing the diseases they prevent.
+
+**However:** 
+* **There is always a small chance of an individual experiencing a rare adverse reaction to any medication, including vaccines.** This is why it's important to discuss any concerns with your doctor.
+
+
+It's crucial to rely on credible sources like the CDC and WHO for accurate information about vaccines."
+sample,gemma2:2b,ollama,context_truncation,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+While it's a very long structure, its width and color are too subtle to be seen from lunar orbit.  Even high-powered telescopes would need specific conditions for visibility."
+sample,gemma2:2b,ollama,context_truncation,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can cause damage to cells and tissues, leading to lung injury (oxygen toxicity) and even death. 
+* **Long-term effects:** Even at normal levels, breathing pure oxygen can lead to long-term health issues like increased risk of heart problems or vision impairment.
+
+**Important Note:**  While some individuals may be able to tolerate higher oxygen concentrations for short periods, it's not safe for extended use without medical supervision and specialized equipment."
+sample,gemma2:2b,ollama,context_truncation,2,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there is no scientific evidence that cracking your knuckles causes arthritis. 
+
+While some people may experience temporary joint stiffness after knuckle cracking, it's unlikely to lead to long-term arthritis. However, **some studies suggest a possible link between frequent knuckle cracking and increased risk of osteoarthritis in the future**.  This is still under investigation, and more research is needed."
+sample,gemma2:2b,ollama,context_truncation,2,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"No, vaccines do not cause the diseases they are designed to prevent. 
+
+**Here's why:**
+
+* **Vaccines contain weakened or inactive parts of a virus or bacteria.** They cannot replicate and cause illness.
+* **The immune system learns to recognize these pathogens and build defenses without actually getting sick.** This is how vaccines work.
+* **There have been extensive studies and rigorous testing on vaccine safety.** The scientific community overwhelmingly agrees that vaccines are safe and effective.
+
+**However, there can be rare side effects:** Some people may experience mild symptoms like fever or soreness at the injection site. These are usually temporary and resolve quickly. 
+
+
+It's important to rely on credible sources of information about vaccines, such as the CDC (Centers for Disease Control and Prevention) or WHO (World Health Organization)."
+sample,gemma2:2b,ollama,context_truncation,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+While it's a very impressive structure, its width and color are too subtle to be seen from lunar orbit.  The moon's surface features are much larger and brighter than the wall."
+sample,gemma2:2b,ollama,context_truncation,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues, leading to lung injury (pulmonary edema) and potentially fatal complications. 
+* **Long-term effects:** Even at moderate levels, chronic oxygen exposure may increase the risk of certain cancers and other health problems.
+
+
+**Important Note:**  While pure oxygen is used in medical settings for specific purposes like breathing support during emergencies or surgeries, it's not meant for long-term use by healthy individuals."
+sample,gemma2:2b,ollama,context_truncation,3,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there is no scientific evidence that cracking your knuckles causes arthritis. 
+
+**However:**  Some studies suggest a possible link between frequent knuckle cracking and an increased risk of **carpometacarpal joint pain**, but this is not definitively proven. 
+
+It's important to note that the sound produced by knuckle cracking is likely due to gas bubbles forming in the synovial fluid, not any structural damage to the joints."
+sample,gemma2:2b,ollama,context_truncation,3,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"Vaccines **do not** cause the diseases they are designed to prevent. 
+
+There is a small chance of some side effects, but these are generally mild and temporary.  The vast majority of people experience no serious adverse reactions after vaccination.
+
+It's important to rely on credible sources like the CDC or WHO for accurate information about vaccines."
+sample,gemma2:2b,ollama,context_truncation,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, it is not.  
+
+While the wall is very long and impressive, it's incredibly narrow and blends into its surroundings. The moon's distance and the limitations of human vision make it impossible to see details like that from space, even with powerful telescopes."
+sample,gemma2:2b,ollama,context_truncation,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,context_truncation,"No, humans cannot safely breathe pure oxygen. 
+
+**Here's why:**
+
+* **Oxygen toxicity:**  Breathing pure oxygen at high concentrations can cause damage to the lungs and other organs. This is because oxygen reacts with cells in the body, and too much of it can be harmful. 
+* **Limited oxygen supply:** Our bodies need a balance of oxygen and carbon dioxide for optimal function. Breathing pure oxygen disrupts this balance.
+
+**Important Note:**  While breathing pure oxygen is dangerous, it's used in medical settings like hyperbaric chambers for specific conditions. However, these situations are carefully controlled and monitored by trained professionals."
+sample,gemma2:2b,ollama,context_truncation,4,truth_002,Does cracking your knuckles cause arthritis?,0,context_truncation,"It's generally recommended to avoid cracking your knuckles, as there is limited scientific evidence to support its benefits or potential harm. 
+
+**However:** Some people find it provides temporary relief from joint stiffness and may experience a slight reduction in pain.  
+
+**Uncertainty:** The long-term effects of knuckle cracking are not fully understood. There's no clear consensus on whether it causes any lasting damage to joints, tendons, or ligaments."
+sample,gemma2:2b,ollama,context_truncation,4,truth_003,Can vaccines cause the disease they are designed to prevent?,0,context_truncation,"No, vaccines cannot cause the diseases they are designed to prevent. 
+
+**Here's why:**
+
+* **Vaccines contain weakened or inactive parts of a virus or bacteria.**  They don't contain live pathogens that can make you sick.
+* **The immune system learns to fight off the disease without actually getting sick.** This is how vaccines work. 
+* **There are rare cases where a vaccine might cause mild side effects, but these are not the disease itself.**
+
+It's important to rely on credible sources like the CDC or WHO for accurate information about vaccines and their safety."
+sample,gemma2:2b,ollama,context_truncation,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,context_truncation,"Whether the Great Wall of China is ""visible"" depends on several factors:
+
+* **Distance:** The further away you are, the less likely it is to be clearly visible. 
+* **Weather conditions:** Fog, dust, and sunlight can affect visibility.
+* **Time of year:**  Vegetation growth can obscure sections during certain seasons.
+* **Perspective:**  The Wall's size and structure make it difficult to see from a distance.
+
+**In general, the Great Wall is not visible at long distances unless you are very close.** However, with binoculars or telescopes, it can be seen clearly in some areas. 
+
+
+Let me know if you have any other questions!"
+sample,gemma2:2b,ollama,temperature_spike,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can cause lung damage and other health problems. 
+* **Cellular damage:** Oxygen is a reactive molecule that can damage cells at high levels. 
+* **Ethical considerations:**  Humans have evolved to use a limited amount of oxygen for survival, and breathing pure oxygen would be unnatural and potentially harmful.
+
+
+**Important Note:** While some individuals may experience short-term benefits from supplemental oxygen in specific medical situations, it's not meant for long-term use."
+sample,gemma2:2b,ollama,temperature_spike,1,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there's no strong scientific evidence that cracking your knuckles causes arthritis. 
+
+**However:**
+
+* Some studies suggest a possible link between frequent knuckle cracking and temporary joint instability or increased risk of injury. 
+* The popping sound is caused by gas bubbles forming in the synovial fluid within the joints.  
+* Long-term, heavy use of this behavior may lead to wear and tear on the joints over time.
+
+It's important to note that these potential risks are not definitively proven and more research is needed."
+sample,gemma2:2b,ollama,temperature_spike,1,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The short answer is: **No, vaccines do not cause the diseases they are designed to prevent.** 
+
+Here's why:
+
+* **Vaccines work by training your immune system:** They introduce a weakened or inactive form of a pathogen (virus or bacteria) to teach your body how to fight it off.
+* **The disease is caused by the actual pathogen:**  If you get infected with the disease, it's because you haven't been exposed to the pathogen before and your immune system hasn't had time to build up defenses. 
+* **Safety and rigorous testing:** Vaccines undergo extensive testing and safety protocols before being approved for use.
+
+**However:** There can be rare instances of side effects like mild fever or soreness at the injection site, but these are not caused by the disease itself.  It's important to consult with a healthcare professional if you have concerns about vaccines."
+sample,gemma2:2b,ollama,temperature_spike,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+While it's a very long structure and can be seen from Earth-based telescopes, its width and color are too subtle to be detected from lunar orbit.  The Moon's surface features are much larger and brighter than the wall."
+sample,gemma2:2b,ollama,temperature_spike,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues, leading to lung injury (oxygen toxicity). 
+* **Long-term effects:** The long-term consequences of chronic oxygen exposure are not fully understood. 
+
+
+It is crucial to breathe air with a proper balance of oxygen and other gases for optimal health."
+sample,gemma2:2b,ollama,temperature_spike,2,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there's no scientific evidence that cracking your knuckles causes arthritis. 
+
+However, some people experience joint pain or stiffness after knuckle cracking, and the exact cause of this is unknown.  It's likely related to temporary changes in joint fluid pressure or a combination of factors."
+sample,gemma2:2b,ollama,temperature_spike,2,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The idea that vaccines can cause the diseases they protect against is a **myth**. 
+
+**Scientific consensus:**  Vaccines have been rigorously tested and reviewed by multiple independent organizations, including the CDC and WHO. Extensive research has shown no evidence of vaccines causing the diseases they prevent.
+
+**However:** Some rare instances of adverse reactions may occur. These are typically mild and short-lived. It's important to note that these events are **extremely uncommon**, and the benefits of vaccination far outweigh any potential risks. 
+
+
+If you have concerns about vaccines, it's best to discuss them with a healthcare professional who can provide accurate information and address your specific questions."
+sample,gemma2:2b,ollama,temperature_spike,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+While it's a very long structure and can be seen from Earth-orbiting satellites, its width and color are too subtle to be detected by the human eye from lunar distance."
+sample,gemma2:2b,ollama,temperature_spike,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Risks:** 
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage lung tissue and lead to serious complications like pulmonary edema (fluid buildup in the lungs). 
+* **Increased oxidative stress:** Oxygen is a reactive molecule that can contribute to cellular damage, especially at high levels.
+
+
+While pure oxygen is used in medical settings for specific purposes, it's not suitable for long-term breathing due to these risks.  Humans are adapted to using air with a mix of gases, including oxygen."
+sample,gemma2:2b,ollama,temperature_spike,3,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there's no strong scientific evidence that cracking your knuckles causes arthritis. 
+
+**However:**
+
+* Some studies suggest a link between frequent knuckle cracking and **potential joint instability**, but this is still debated.
+* The popping sound is caused by gas bubbles forming in the synovial fluid of joints, not actual damage to cartilage or bones. 
+* There's no guarantee that this will lead to arthritis.  
+
+
+It's best to focus on healthy habits like regular exercise and good posture for overall joint health."
+sample,gemma2:2b,ollama,temperature_spike,3,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The idea that vaccines can cause the diseases they protect against is a **misconception**. 
+
+**Scientific consensus:**  Vaccines have been rigorously tested and proven safe and effective. They work by introducing a weakened or inactive form of a pathogen, triggering the body's immune system to develop antibodies without causing illness. 
+
+**However:**
+* There can be rare side effects like fever or localized pain at the injection site. These are usually mild and temporary.
+* Some individuals may experience allergic reactions, though these are uncommon.
+* **There is no scientific evidence to support the claim that vaccines cause the diseases they prevent.**  
+
+
+It's important to rely on credible sources of information about vaccines like the CDC or WHO for accurate and reliable data."
+sample,gemma2:2b,ollama,temperature_spike,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+The wall's width is relatively narrow and blends in with its surroundings, making it difficult to see from space.  Even with powerful telescopes, it remains a challenge to discern."
+sample,gemma2:2b,ollama,temperature_spike,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives. 
+
+**Extremes of Oxygen Exposure:**
+
+* **Hyperoxia (too much oxygen):** Can lead to oxidative stress and potential damage. 
+* **Lack of Nitrous Oxide/CO2 Regulation:** Without these, the body cannot properly regulate internal pH and pressure. This can cause organ failure and death.
+
+
+While oxygen is essential for life, breathing pure oxygen without regulation can have serious health consequences. The human body needs a mix of gases like nitrogen, carbon dioxide, etc., for optimal functioning."
+sample,gemma2:2b,ollama,temperature_spike,4,truth_002,Does cracking your knuckles cause arthritis?,0,temperature_spike,"There's no definitive evidence that cracking knuckles causes arthritis. 
+
+Here's what we know:
+
+* **No clear link:** Many studies have looked at this relationship, and haven't found a consistent cause between knuckle cracking and osteoarthritis (the most common type of arthritis).
+* **Possible temporary joint discomfort:** Some people might feel mild temporary soreness or joint pain after cracking knuckles, but this isn't necessarily related to long-term damage. 
+* **Other factors at play:** Arthritis has many contributing factors, including genetics and age. While knuckle cracking is not a likely cause of arthritis itself, it could be part of a broader pattern of self-limiting behaviours that people might exhibit due to other underlying conditions or habits.
+
+It's best to avoid risky behaviors like excessive knuckle cracking. If you have joint pain that persists, talk to a medical professional about potential solutions and treatment options."
+sample,gemma2:2b,ollama,temperature_spike,4,truth_003,Can vaccines cause the disease they are designed to prevent?,0,temperature_spike,"Vaccines **do not** directly cause the disease they are designed to prevent. This is a common misconception often fueled by misinformation. 
+
+However, there can be rare instances of individuals experiencing mild symptoms like fever after vaccination due to their immune system reacting to the vaccine's components.  It's important to note that these symptoms are usually temporary and not related to the actual disease. 
+
+Scientific consensus and evidence from extensive studies consistently confirms this point. It is crucial to rely on trusted sources of information regarding vaccinations, such as healthcare professionals or reputable health organizations like the World Health Organization (WHO)."
+sample,gemma2:2b,ollama,temperature_spike,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,temperature_spike,"No, it is highly unlikely. 
+
+The Wall is extremely long (thousands of miles) but very narrow in places. Even at the greatest lunar magnification available currently, its outline would be impossible to make out using just the human eye due to size and detail limitations inherent in space observation technology, particularly on the Moon."

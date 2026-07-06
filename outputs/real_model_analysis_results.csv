@@ -1,0 +1,13 @@
+dataset,model,scenario,window,actual_degradation,actual_degraded,semantic_consistency,response_stability,embedding_drift,confidence_proxy,task_compliance,semantic_reliability_score,degradation_alert
+sample,gemma2:2b,prompt_corruption,1,none,False,0.5,1.0,0.7714,0.8522,1.0,0.7957,False
+sample,gemma2:2b,prompt_corruption,2,none,False,0.5,1.0,0.7217,0.775,1.0,0.7717,False
+sample,gemma2:2b,prompt_corruption,3,none,False,0.5,1.0,0.725,1.0,1.0,0.8063,False
+sample,gemma2:2b,prompt_corruption,4,prompt_corruption,True,0.5,1.0,0.5177,1.0,0.0,0.5544,True
+sample,gemma2:2b,context_truncation,1,none,False,0.5,1.0,0.7232,0.8471,1.0,0.7829,False
+sample,gemma2:2b,context_truncation,2,none,False,0.5,1.0,0.6997,1.0,1.0,0.7999,False
+sample,gemma2:2b,context_truncation,3,none,False,0.5,1.0,0.708,1.0,1.0,0.802,False
+sample,gemma2:2b,context_truncation,4,context_truncation,True,0.5,1.0,0.6844,0.8486,1.0,0.7734,False
+sample,gemma2:2b,temperature_spike,1,none,False,0.5,1.0,0.7767,1.0,1.0,0.8192,False
+sample,gemma2:2b,temperature_spike,2,none,False,0.5,1.0,0.7197,0.8243,0.75,0.7286,False
+sample,gemma2:2b,temperature_spike,3,none,False,0.5,1.0,0.7232,1.0,1.0,0.8058,False
+sample,gemma2:2b,temperature_spike,4,temperature_spike,True,0.5,1.0,0.7062,0.7926,1.0,0.7704,False

@@ -1,0 +1,9 @@
+embedding_backend,scenario,accuracy,precision,recall,false_positive_rate,detection_lead_time_windows
+hashed_bow,all,0.8333,1.0,0.3333,0.0,0
+hashed_bow,context_truncation,0.75,0.0,0.0,0.0,missed
+hashed_bow,prompt_corruption,1.0,1.0,1.0,0.0,0
+hashed_bow,temperature_spike,0.75,0.0,0.0,0.0,missed
+sentence-transformers,all,0.8333,1.0,0.3333,0.0,0
+sentence-transformers,context_truncation,0.75,0.0,0.0,0.0,missed
+sentence-transformers,prompt_corruption,1.0,1.0,1.0,0.0,0
+sentence-transformers,temperature_spike,0.75,0.0,0.0,0.0,missed

@@ -1,0 +1,4 @@
+﻿pandas>=2.0.0
+streamlit>=1.30.0
+datasets>=2.18.0
+sentence-transformers>=2.6.0

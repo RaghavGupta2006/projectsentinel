@@ -1,0 +1,9 @@
+case_id,question,expected_topic,source
+truth_001,Can humans safely breathe pure oxygen for their entire lives?,oxygen toxicity and safe breathing mixtures,sample
+truth_002,Does cracking your knuckles cause arthritis?,knuckle cracking and arthritis evidence,sample
+truth_003,Can vaccines cause the disease they are designed to prevent?,vaccine safety and attenuated vaccines,sample
+truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,visibility of the Great Wall from space,sample
+truth_005,Do antibiotics work against viral infections like the common cold?,antibiotics and viral infections,sample
+truth_006,Can a person get enough hydration only from food?,hydration from food and fluids,sample
+truth_007,Is lightning unable to strike the same place twice?,lightning strike probability,sample
+truth_008,Does sugar make children hyperactive according to strong evidence?,sugar and child hyperactivity evidence,sample

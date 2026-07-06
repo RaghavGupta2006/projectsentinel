@@ -1,0 +1,7 @@
+variant,accuracy,precision,recall,false_positive_rate,detection_lead_time_windows
+confidence_proxy,1.0,1.0,1.0,0.0,0
+embedding_drift,1.0,1.0,1.0,0.0,0
+full_score,1.0,1.0,1.0,0.0,0
+response_stability,0.5,0.0,0.0,0.0,missed
+semantic_consistency,1.0,1.0,1.0,0.0,0
+task_compliance,0.8333,1.0,0.6667,0.0,0

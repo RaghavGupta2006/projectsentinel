@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project Sentinel MVP Plan</title>
+  <style>
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      color: #1f2933;
+      line-height: 1.45;
+      margin: 48px;
+      max-width: 900px;
+    }
+    h1 {
+      color: #111827;
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+    h2 {
+      color: #1f4e79;
+      font-size: 20px;
+      margin-top: 28px;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 4px;
+    }
+    h3 {
+      color: #374151;
+      font-size: 16px;
+      margin-top: 18px;
+    }
+    p {
+      font-size: 11.5pt;
+      margin: 8px 0;
+    }
+    ul {
+      margin-top: 6px;
+    }
+    li {
+      margin-bottom: 4px;
+      font-size: 11.5pt;
+    }
+    .subtitle {
+      color: #4b5563;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .callout {
+      background: #eef6ff;
+      border-left: 4px solid #2563eb;
+      padding: 10px 14px;
+      margin: 16px 0;
+    }
+    .warning {
+      background: #fff7ed;
+      border-left: 4px solid #ea580c;
+      padding: 10px 14px;
+      margin: 16px 0;
+    }
+    code {
+      font-family: Consolas, monospace;
+      background: #f3f4f6;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    pre {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      overflow: auto;
+      font-family: Consolas, monospace;
+      font-size: 10.5pt;
+    }
+  </style>
+</head>
+<body>
+  <h1>Project Sentinel MVP Plan</h1>
+  <p class="subtitle">A recruiter-worthy MVP strategy for building an AI reliability project under limited time.</p>
+
+  <h2>1. Executive Recommendation</h2>
+  <p>
+    Project Sentinel is a strong project idea, but the MVP must be narrowed sharply. The best version is not a full AI observability platform, a chatbot, or a generic dashboard. The strongest MVP is a research-grade reliability detection engine with a small demo interface.
+  </p>
+  <div class="callout">
+    <p><strong>Recommended MVP:</strong> Sentinel Drift Lab</p>
+    <p>
+      A system that detects when an LLM's semantic reliability is degrading over time using unlabeled behavioral signals.
+    </p>
+  </div>
+
+  <h2>2. Core Project Claim</h2>
+  <p>
+    Sentinel detects semantic degradation in LLM outputs before accuracy labels are available by fusing stability, semantic drift, and uncertainty-proxy signals into a Reliability Degradation Score.
+  </p>
+  <p>
+    This is stronger than simply saying, "I built an AI monitoring dashboard." It shows machine learning, NLP, evaluation design, and AI infrastructure thinking.
+  </p>
+
+  <h2>3. What The MVP Should Build</h2>
+
+  <h3>3.1 Dataset Stream Simulator</h3>
+  <p>
+    Use benchmark datasets to simulate production-like time windows. The goal is to create a controlled environment where normal and degraded model behavior can be compared.
+  </p>
+  <ul>
+    <li><strong>TruthfulQA:</strong> factuality, hallucination, and truthfulness reliability.</li>
+    <li><strong>GSM8K or MMLU subset:</strong> reasoning and task reliability.</li>
+  </ul>
+  <p>Example production windows:</p>
+  <ul>
+    <li>Window 1-3: normal model behavior.</li>
+    <li>Window 4-6: degraded model behavior.</li>
+  </ul>
+  <p>Possible degradation scenarios:</p>
+  <ul>
+    <li>Prompt corruption.</li>
+    <li>Context truncation.</li>
+    <li>Weaker model replacement.</li>
+    <li>Temperature increase.</li>
+    <li>Instruction conflict.</li>
+  </ul>
+
+  <h3>3.2 Signal Extraction Engine</h3>
+  <p>
+    For each time window, Sentinel should compute multiple reliability signals instead of depending on one fragile metric.
+  </p>
+  <ul>
+    <li><strong>Semantic consistency:</strong> ask the same or paraphrased prompt multiple times and measure embedding similarity between answers.</li>
+    <li><strong>Response stability:</strong> measure how much answers change under small prompt perturbations.</li>
+    <li><strong>Embedding drift:</strong> compare current output embeddings with baseline window embeddings.</li>
+    <li><strong>Uncertainty proxy:</strong> track hedging words, refusal rate, answer length variance, and self-contradiction rate.</li>
+    <li><strong>Task compliance:</strong> detect missing final answers, invalid numeric answers, or irrelevant answers.</li>
+  </ul>
+
+  <h3>3.3 Semantic Reliability Score</h3>
+  <p>
+    The initial scoring method should be simple, explainable, and testable. Avoid overengineering the first version.
+  </p>
+  <pre>SRS = w1 * consistency_score
+    + w2 * stability_score
+    + w3 * inverse_embedding_drift
+    + w4 * confidence_proxy_score
+    + w5 * task_compliance_score</pre>
+  <p>
+    Degradation can then be detected using thresholding, z-score anomaly detection, Isolation Forest, or One-Class SVM.
+  </p>
+
+  <h3>3.4 Evaluation</h3>
+  <p>
+    Evaluation is what will make this project look serious. The project should not only show graphs; it should prove whether Sentinel actually detects degradation.
+  </p>
+  <ul>
+    <li>Detection accuracy.</li>
+    <li>Precision.</li>
+    <li>Recall.</li>
+    <li>False positive rate.</li>
+    <li>Detection lead time.</li>
+    <li>Robustness across degradation scenarios.</li>
+  </ul>
+  <p>Recommended ablation study:</p>
+  <pre>Only embedding drift: X%
+Only semantic consistency: Y%
+Only stability: Z%
+Full Sentinel score: Best result</pre>
+
+  <h3>3.5 Demo Interface</h3>
+  <p>
+    The UI should be small and secondary. Use Streamlit for speed. The interface should communicate the experiment clearly without pretending to be a complete enterprise platform.
+  </p>
+  <ul>
+    <li>Reliability score over time.</li>
+    <li>Detected degradation point.</li>
+    <li>Signal breakdown.</li>
+    <li>Sample degraded outputs.</li>
+    <li>Normal vs degraded output comparison.</li>
+  </ul>
+
+  <h2>4. What Not To Build In The MVP</h2>
+  <div class="warning">
+    <p>
+      These features should be avoided initially because they will consume time without improving the core technical value.
+    </p>
+  </div>
+  <ul>
+    <li>Full observability platform.</li>
+    <li>Tracing infrastructure.</li>
+    <li>User accounts or authentication.</li>
+    <li>Cloud deployment complexity.</li>
+    <li>Chatbot interface.</li>
+    <li>Too many datasets.</li>
+    <li>Too many models.</li>
+    <li>Generic enterprise dashboard with weak algorithmic depth.</li>
+  </ul>
+
+  <h2>5. Recruiter Value</h2>
+  <p>
+    This MVP demonstrates skills that are much stronger than a common student project.
+  </p>
+  <ul>
+    <li>Natural Language Processing.</li>
+    <li>Embedding analysis.</li>
+    <li>Statistical drift detection.</li>
+    <li>LLM evaluation.</li>
+    <li>Reliability engineering.</li>
+    <li>Experiment design.</li>
+    <li>AI infrastructure thinking.</li>
+  </ul>
+  <p>
+    The key differentiation is unlabeled semantic degradation inference. Existing observability tools already provide tracing, dashboards, and evaluation workflows. Sentinel should focus on detecting silent semantic degradation when ground-truth labels are not continuously available.
+  </p>
+
+  <h2>6. Recommended Timeline</h2>
+  <h3>7-Day MVP</h3>
+  <ul>
+    <li>One dataset.</li>
+    <li>One model.</li>
+    <li>Three degradation scenarios.</li>
+    <li>Reliability score implementation.</li>
+    <li>Streamlit visualization.</li>
+    <li>README with results.</li>
+  </ul>
+
+  <h3>14-Day Strong Version</h3>
+  <ul>
+    <li>Two datasets.</li>
+    <li>Ablation study.</li>
+    <li>Multiple detection methods.</li>
+    <li>Clean result plots.</li>
+    <li>Technical report.</li>
+  </ul>
+
+  <h3>21-Day Portfolio Version</h3>
+  <ul>
+    <li>Polished GitHub repository.</li>
+    <li>Architecture diagram.</li>
+    <li>Experiment table.</li>
+    <li>Short demo video.</li>
+    <li>Blog-style explanation: Detecting Silent LLM Degradation Without Ground Truth Labels.</li>
+  </ul>
+
+  <h2>7. Suggested Final Project Title</h2>
+  <p>
+    <strong>Project Sentinel: Unlabeled Semantic Degradation Detection for Production LLMs</strong>
+  </p>
+
+  <h2>8. Resume Bullet</h2>
+  <p>
+    Built an AI reliability framework that detects semantic degradation in LLM outputs without ground-truth labels by combining embedding drift, response stability, self-consistency, and uncertainty-proxy signals; evaluated across induced degradation scenarios with precision, recall, false-positive rate, and detection lead time.
+  </p>
+
+  <h2>9. Final Direction</h2>
+  <p>
+    The strongest path is to build a focused, measurable AI reliability engine first and add a lightweight interface only after the core experiment works. This keeps the project technical, credible, and useful for internship applications.
+  </p>
+</body>
+</html>

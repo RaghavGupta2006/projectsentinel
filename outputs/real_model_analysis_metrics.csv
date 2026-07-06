@@ -1,0 +1,5 @@
+scenario,windows,true_positive,false_positive,true_negative,false_negative,accuracy,precision,recall,false_positive_rate,detection_lead_time_windows
+all,12,1,0,9,2,0.8333,1.0,0.3333,0.0,0
+context_truncation,4,0,0,3,1,0.75,0.0,0.0,0.0,missed
+prompt_corruption,4,1,0,3,0,1.0,1.0,1.0,0.0,0
+temperature_spike,4,0,0,3,1,0.75,0.0,0.0,0.0,missed
