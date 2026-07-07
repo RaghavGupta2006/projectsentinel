@@ -1,0 +1,6 @@
+dataset,model,scenario,window,actual_degradation,actual_degraded,semantic_consistency,response_stability,embedding_drift,confidence_proxy,task_compliance,semantic_reliability_score,degradation_alert
+sample,gemma2:2b,healthy_baseline,1,none,False,0.9795,0.9469,1.0,1.0,1.0,0.9869,False
+sample,gemma2:2b,healthy_baseline,2,none,False,0.9171,0.9513,0.9979,0.9075,0.9688,0.9513,False
+sample,gemma2:2b,healthy_baseline,3,none,False,0.9255,0.9472,0.996,0.9074,0.9688,0.9523,False
+sample,gemma2:2b,healthy_baseline,4,none,False,0.9187,0.9675,0.9982,0.9071,0.9688,0.9542,False
+sample,gemma2:2b,healthy_baseline,5,none,False,0.9797,0.9469,0.9977,1.0,1.0,0.9864,False

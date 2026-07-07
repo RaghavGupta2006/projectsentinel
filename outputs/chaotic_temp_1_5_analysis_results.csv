@@ -1,0 +1,6 @@
+dataset,model,scenario,window,actual_degradation,actual_degraded,semantic_consistency,response_stability,embedding_drift,confidence_proxy,task_compliance,semantic_reliability_score,degradation_alert
+sample,gemma2:2b,temperature_drift_extreme,1,none,False,0.9804,0.9488,1.0,1.0,1.0,0.9874,False
+sample,gemma2:2b,temperature_drift_extreme,2,temperature_spike,True,0.9387,0.9163,0.9902,0.8186,1.0,0.9424,False
+sample,gemma2:2b,temperature_drift_extreme,3,temperature_spike,True,0.9471,0.8947,0.9895,0.8389,1.0,0.9442,False
+sample,gemma2:2b,temperature_drift_extreme,4,temperature_spike,True,0.9267,0.9465,0.9882,0.8174,1.0,0.9433,False
+sample,gemma2:2b,temperature_drift_extreme,5,temperature_spike,True,0.944,0.8943,0.9881,0.8683,1.0,0.9474,False

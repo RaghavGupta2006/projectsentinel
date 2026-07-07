@@ -1,0 +1,518 @@
+dataset,model,provider,scenario,window,case_id,question,variant,degradation,output
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,1,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,2,none,"No, humans cannot safely breathe pure oxygen for their entire lives. 
+
+**Long-term exposure to high concentrations of oxygen can lead to:**
+
+* **Oxygen toxicity:**  This is a serious"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_001,Can humans safely breathe pure oxygen for their entire lives?,3,none,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+**Here's why:**
+
+* **Oxygen toxicity:** Prolonged exposure to high concentrations of oxygen can damage cells and tissues"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_002,Does cracking your knuckles cause arthritis?,0,none,"No, there is no scientific evidence that cracking your knuckles causes arthritis. 
+
+While some people may experience temporary joint stiffness after knuckle cracking, this is likely due to the popping sound and not a direct"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_002,Does cracking your knuckles cause arthritis?,1,none,"No, there's no strong scientific evidence that cracking your knuckles causes arthritis. 
+
+**However:**
+
+* Some studies suggest a possible link between frequent knuckle cracking and **temporary joint laxity**,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_002,Does cracking your knuckles cause arthritis?,2,none,"No, there is no scientific evidence that cracking your knuckles causes arthritis. 
+
+**However:**
+
+* Some people may experience temporary joint stiffness or discomfort after knuckle cracking, but this is usually harmless and"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_002,Does cracking your knuckles cause arthritis?,3,none,"No, there's no strong scientific evidence that cracking your knuckles causes arthritis. 
+
+However, some studies suggest a **potential link** between frequent knuckle cracking and an increased risk of osteoarthritis in the"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_003,Can vaccines cause the disease they are designed to prevent?,0,none,"The short answer is **no**. 
+
+Vaccines work by introducing a weakened or inactive form of a pathogen, teaching your immune system how to fight it without causing illness.  
+
+**However:**"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_003,Can vaccines cause the disease they are designed to prevent?,1,none,"The short answer is **no**. 
+
+Vaccines work by introducing a weakened or inactive form of a pathogen, teaching your immune system how to fight it without causing illness.  
+
+**However:**"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_003,Can vaccines cause the disease they are designed to prevent?,2,none,"The short answer is **no**. 
+
+Vaccines work by introducing a weakened or inactive form of a pathogen, teaching your immune system how to fight it without causing illness.  
+
+**However:**"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_003,Can vaccines cause the disease they are designed to prevent?,3,none,"The idea that vaccines can cause the diseases they prevent is a **myth**. 
+
+**Here's why:**
+
+* **Vaccines work by training your immune system.** They introduce a weakened or"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,none,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+While it's a very impressive structure, its width and color are too subtle to be seen from"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,1,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+Here's why:
+
+* **Distance:** The moon is about 238,9"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,2,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+Here's why:
+
+* **Distance:** The moon is about 238,9"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,3,none,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+While it's a very long structure and can be seen from Earth-orbiting satellites, its"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_005,Do antibiotics work against viral infections like the common cold?,0,none,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are effective against bacterial infections because they target bacteria-specific mechanisms. Viruses, on the other hand, have different"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_005,Do antibiotics work against viral infections like the common cold?,1,none,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are designed to target bacteria, while viruses are completely different organisms and don't respond to antibiotic treatment."
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_005,Do antibiotics work against viral infections like the common cold?,2,none,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are effective against bacterial infections because they target bacteria-specific mechanisms. Viruses, on the other hand, are much"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_005,Do antibiotics work against viral infections like the common cold?,3,none,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are effective against bacterial infections because they target bacteria-specific mechanisms. Viruses, on the other hand, are much"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_006,Can a person get enough hydration only from food?,0,none,"No, a person cannot reliably get enough hydration solely from food.  
+
+**Why:** 
+* **Water is essential for bodily functions:** Our bodies need water to regulate temperature, transport nutrients,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_006,Can a person get enough hydration only from food?,1,none,"No, a person cannot reliably get enough hydration solely from food.  
+
+**Why:** 
+* **Water is essential for bodily functions:** Our bodies need water to regulate temperature, transport nutrients,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_006,Can a person get enough hydration only from food?,2,none,"No, a person cannot get enough hydration solely from food.  
+
+While some foods contain water, the amount is insufficient to meet daily hydration needs. 💧"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_006,Can a person get enough hydration only from food?,3,none,"No, a person cannot reliably get enough hydration solely from food.  
+
+**Why:** 
+* **Water is essential for bodily functions:** Our bodies need water to regulate temperature, transport nutrients,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_007,Is lightning unable to strike the same place twice?,0,none,"The idea that lightning can't strike the same place twice is a myth.  **It's true that lightning strikes are statistically less likely to repeat in the exact same spot, but it'"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_007,Is lightning unable to strike the same place twice?,1,none,"The idea that lightning can't strike the same place twice is a myth.  **It is scientifically possible for lightning to strike the same place multiple times.** 
+
+Here's why:"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_007,Is lightning unable to strike the same place twice?,2,none,"The idea that lightning can't strike the same place twice is a myth.  **It is statistically possible for lightning to strike the same place multiple times.** 
+
+Here's why:"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_007,Is lightning unable to strike the same place twice?,3,none,"The idea that lightning can't strike the same place twice is a myth.  **It's true that lightning strikes are statistically less likely to repeat in the exact same spot, but it'"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_008,Does sugar make children hyperactive according to strong evidence?,0,none,"There is **no strong scientific evidence** that sugar directly causes hyperactivity in children. 
+
+While some studies have shown a correlation between sugary drinks and increased activity levels, these findings are often inconsistent and"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_008,Does sugar make children hyperactive according to strong evidence?,1,none,"There is **no strong scientific evidence** that sugar directly causes hyperactivity in children. 
+
+Many studies have investigated this link, but the results are often inconclusive or contradictory. Some studies show a temporary"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_008,Does sugar make children hyperactive according to strong evidence?,2,none,"There is **no strong scientific evidence** that sugar directly causes hyperactivity in children. 
+
+Many studies have investigated this, and the results are inconclusive. Some small studies show a possible link between sugary"
+sample,gemma2:2b,ollama,temperature_drift_extreme,1,truth_008,Does sugar make children hyperactive according to strong evidence?,3,none,"There is **no strong scientific evidence** that sugar directly causes hyperactivity in children. 
+
+Many studies have investigated this claim, and the results are inconclusive. Some small studies show a temporary increase in"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,temperature_spike,"No, breathing pure oxygen for extended periods is extremely dangerous.  Humans are adapted to use a blend of oxygen and nitrogen in the air we breathe. **Long-term exposure to pure oxygen can lead"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,1,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives. 
+
+Here's why:  Prolonged exposure to high concentrations of oxygen can cause damage to the lungs and other vital organs."
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,2,temperature_spike,"No, it is not safe to breathe pure oxygen for life.  While necessary for some procedures in healthcare settings, long-term exposure to high concentrations of oxygen (as with pure O2) can"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_001,Can humans safely breathe pure oxygen for their entire lives?,3,temperature_spike,"No, human bodies are not equipped to breathe pure oxygen for an extended lifespan.  
+
+Here's why:
+
+* **Oxidation:** Oxygen can cause cell damage and inflammation if it accumulates in"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_002,Does cracking your knuckles cause arthritis?,0,temperature_spike,"No, there is no strong scientific evidence to suggest that cracking your knuckles causes arthritis.  
+
+**While some people might believe it's true,** it likely just relates to personal opinion and the perception"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_002,Does cracking your knuckles cause arthritis?,1,temperature_spike,"No, cracking your knuckles does not directly cause arthritis. 
+
+**Scientific consensus:**  The popping sound comes from a temporary fluid displacement in the joints.  There's no clear evidence that this"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_002,Does cracking your knuckles cause arthritis?,2,temperature_spike,"No, there's no scientific evidence suggesting that cracking knuckles causes arthritis. 
+
+**While some discomfort might occur in the joints after repeated knuckle-cracking, it's unlikely to lead to"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_002,Does cracking your knuckles cause arthritis?,3,temperature_spike,"No, cracking your knuckles does not cause arthritis. 
+
+**Here's what we know:**
+
+* **Limited scientific evidence:** There is no strong, consistent research that supports a causal link between"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_003,Can vaccines cause the disease they are designed to prevent?,0,temperature_spike,"The answer is **generally no**. 
+
+Vaccines contain weakened or inactive components of a pathogen, which teaches the immune system how to recognize and fight the real thing without causing the disease."
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_003,Can vaccines cause the disease they are designed to prevent?,1,temperature_spike,"Vaccines cannot directly cause the diseases they're designed to prevent.  
+
+The science of vaccination is complex, but it relies on teaching your immune system how to recognize and fight off a specific pathogen"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_003,Can vaccines cause the disease they are designed to prevent?,2,temperature_spike,"Vaccines, in general, do **not** cause the diseases they are intended to prevent. 
+
+There is a **very small possibility of rare adverse reactions**. While serious side effects are exceedingly rare"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_003,Can vaccines cause the disease they are designed to prevent?,3,temperature_spike,"No, widely accepted scientific consensus does not support this claim.  
+
+While very rare cases of immune-system dysfunction after vaccination might occur in some individuals, **vaccines do not directly cause the diseases"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,temperature_spike,"No, the Great Wall of China is not visible to the naked eye from the moon. 
+
+There are several reasons for this:
+
+* **Its width and height:** While extensive, the wall"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,1,temperature_spike,"No, there is no evidence suggesting that the Great Wall of China is visible from the Moon with the naked eye. 
+
+While details on the Moon's surface are often debated in scientific circles and"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,2,temperature_spike,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+**Uncertainty:** While there have been no clear scientific studies directly verifying its visibility, many believe it'"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,3,temperature_spike,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+Here's why:
+
+* **Distance:** The moon is approximately 238,9"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_005,Do antibiotics work against viral infections like the common cold?,0,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are only effective against bacterial infections as they target cellular processes unique to bacteria and not viruses.  Viruses cause"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_005,Do antibiotics work against viral infections like the common cold?,1,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. They target bacterial cells and have no effect on viruses.  Antibiotics are ineffective for treating colds because they cause damage to healthy human"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_005,Do antibiotics work against viral infections like the common cold?,2,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  Antibiotics target bacteria, while viruses are not made of bacteria. 
+
+Treating a virus like a common cold often involves symptom"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_005,Do antibiotics work against viral infections like the common cold?,3,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics are designed to fight bacterial infections caused by germs that can be seen with a microscope (bacteria). Viruses are much"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_006,Can a person get enough hydration only from food?,0,temperature_spike,"No, a person cannot reliably get enough hydration *only* from food. 
+
+While some fruits and vegetables contain water, they typically don't provide enough to meet the average person's fluid"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_006,Can a person get enough hydration only from food?,1,temperature_spike,"No, it is impossible for a person to get **enough** hydration solely from food.  
+
+Here's why: 
+
+* **Food has minimal water content:**  Foods primarily contain water"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_006,Can a person get enough hydration only from food?,2,temperature_spike,"No, a person cannot reliably get enough hydration solely from food.  
+
+While some foods contain water and electrolytes (sodium, potassium, magnesium), the amount is insufficient to maintain healthy hydration levels for prolonged"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_006,Can a person get enough hydration only from food?,3,temperature_spike,"It is **unlikely** to be possible to get enough hydration solely from food for an individual of healthy stature, especially not if one does not regularly consume significant amounts of fruits and vegetables with high water content"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_007,Is lightning unable to strike the same place twice?,0,temperature_spike,"The idea that lightning ""can't"" strike the same place twice is a common myth. 
+
+**There is evidence of lightning striking the same location multiple times.**  While it's difficult"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_007,Is lightning unable to strike the same place twice?,1,temperature_spike,"The idea that lightning ""can't"" strike the same place twice is a myth.  **Lightning can, and does, repeatedly strike the same spot in tall buildings and trees.**  
+
+Here"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_007,Is lightning unable to strike the same place twice?,2,temperature_spike,"The saying ""lightning never strikes the same place twice"" is a common myth. 
+
+**While lightning tends to prefer high points and avoid repeat strikes due to factors like the presence of surrounding conductive material"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_007,Is lightning unable to strike the same place twice?,3,temperature_spike,"No, that is a myth. Lightning can and does strike the same place twice, especially tall objects like trees or buildings. 
+
+**The key factor for lightning strikes:** The path of least resistance"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_008,Does sugar make children hyperactive according to strong evidence?,0,temperature_spike,"No, there is no strong scientific evidence that sugar makes children hyperactive. 
+
+While some studies have shown a correlation between sugar intake and behavior in some contexts (for example, when sugary snacks are"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_008,Does sugar make children hyperactive according to strong evidence?,1,temperature_spike,"There is no strong scientific evidence that sugar makes children *hyper* active, contrary to popular belief.  Some small studies show potential correlations, but larger controlled trials have not confirmed this. **The placebo"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_008,Does sugar make children hyperactive according to strong evidence?,2,temperature_spike,"The evidence for sugar causing hyperactivity in children is mixed. 
+
+While some studies suggest a possible link, **scientific consensus points towards weak or no causal relationship**. 
+
+Factors influencing research results:"
+sample,gemma2:2b,ollama,temperature_drift_extreme,2,truth_008,Does sugar make children hyperactive according to strong evidence?,3,temperature_spike,"There is **no strong scientific evidence** supporting the claim that sugar makes children hyperactive.  
+
+Some small studies have shown potential for slight effects on behavior in certain children, but these are often inconclusive"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,temperature_spike,"No, breathing pure oxygen for extended periods is **extremely dangerous** and can be fatal.  While our bodies are capable of extracting oxygen from the air to function, **high concentrations of oxygen can damage"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,1,temperature_spike,"No, humans cannot breathe pure oxygen for their entire lives without major negative consequences. **Our bodies can only tolerate a small amount of pure oxygen due to the risk of damage.**  Long-term exposure"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,2,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+Here's why: 
+
+* **Damage to lungs:** While some brief exposure to pure oxygen is possible for normal circumstances"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_001,Can humans safely breathe pure oxygen for their entire lives?,3,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives. 
+
+**While it may provide short-term benefits for breathing therapy, long-term exposure to pure oxygen is highly dangerous and can"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_002,Does cracking your knuckles cause arthritis?,0,temperature_spike,"No, cracking your knuckles does not directly cause arthritis. 
+
+However, there's a slight lack of clear evidence about its long-term impact on joints in general and it could lead to more"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_002,Does cracking your knuckles cause arthritis?,1,temperature_spike,"There's no strong evidence that cracking your knuckles causes arthritis.  
+
+Here's why:
+
+* **No causation link:** While it's possible to weaken joints slightly, studies haven'"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_002,Does cracking your knuckles cause arthritis?,2,temperature_spike,"No, there's no scientific evidence to suggest that cracking your knuckles causes arthritis. 
+
+The popping sound is due to the movement of gas bubbles in the synovial fluid of the joint. However"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_002,Does cracking your knuckles cause arthritis?,3,temperature_spike,"No, there is no strong evidence that cracking your knuckles causes arthritis.  
+
+**However,** it may make a minor joint problem slightly worse in some people with existing conditions or limited range of motion."
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_003,Can vaccines cause the disease they are designed to prevent?,0,temperature_spike,"The claim that vaccines can *cause* the diseases they prevent is a **highly complex and controversial topic.** 
+
+**Scientific consensus generally states:**  Vaccines do not directly cause diseases. They introduce"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_003,Can vaccines cause the disease they are designed to prevent?,1,temperature_spike,"Vaccines are extremely safe and do **not** cause the diseases they protect against. 
+
+There is **rare** evidence of some very specific allergic reactions after vaccination, which are closely monitored by medical"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_003,Can vaccines cause the disease they are designed to prevent?,2,temperature_spike,"No,  vaccines generally do not cause the diseases they are designed to prevent. 
+
+However, there can be some very rare cases of serious side effects, particularly with certain weakened or inactivated"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_003,Can vaccines cause the disease they are designed to prevent?,3,temperature_spike,"The answer is **no**.
+
+Vaccines generally don't cause the diseases they are designed to prevent.  There's a very small chance of side effects, some mild and temporary, but"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,temperature_spike,"No, the Great Wall of China is not visible to the naked eye from the Moon. 
+
+Even with advanced telescopes on the Moon (which do exist), its subtle variations are often dwarfed by"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,1,temperature_spike,"No, it is not possible to see the Great Wall of China from the Moon with the naked eye. 
+
+While we have strong evidence that astronauts have been on the moon and witnessed a vast emptiness"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,2,temperature_spike,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+While some faint details may be captured in high-resolution images, its overall outline is simply too small"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,3,temperature_spike,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+There are too many factors influencing visibility: 
+* **Resolution and clarity:**  The limitations of"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_005,Do antibiotics work against viral infections like the common cold?,0,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  
+
+**Antibiotics target bacteria**, which are single-celled organisms that reproduce through cell division. **Viruses are much simpler"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_005,Do antibiotics work against viral infections like the common cold?,1,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. They only target bacterial infections. 
+
+Here's why:
+
+* **Different Mechanisms:** Antibiotics target specific mechanisms essential for bacteria"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_005,Do antibiotics work against viral infections like the common cold?,2,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. They target bacteria."
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_005,Do antibiotics work against viral infections like the common cold?,3,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. They only target bacteria, not viruses."
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_006,Can a person get enough hydration only from food?,0,temperature_spike,"No, a person cannot get sufficient hydration solely from food.  While some foods contain water, the amount is not typically enough to meet daily fluid needs. 💧
+
+**Water is crucial for various"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_006,Can a person get enough hydration only from food?,1,temperature_spike,"No,  a person cannot reliably get sufficient hydration solely from food. 
+
+While some foods have water content, they typically don't provide enough fluid to meet daily hydration needs, particularly when coupled"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_006,Can a person get enough hydration only from food?,2,temperature_spike,"No, it's impossible to reliably get enough hydration solely from food for most people. 
+
+While some foods are high in water content (like watermelon), the amount needed daily through dietary water sources"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_006,Can a person get enough hydration only from food?,3,temperature_spike,"It's very difficult, if not impossible for most people to obtain adequate hydration solely from their diet. 
+
+Here's why:
+
+* **Water makes up ~70% of our"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_007,Is lightning unable to strike the same place twice?,0,temperature_spike,"No, that's a myth! Lightning can strike the same place multiple times. ⚡
+
+However, the probability of lightning striking a given location repeatedly **can be statistically low**,  given the"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_007,Is lightning unable to strike the same place twice?,1,temperature_spike,"No, that's a myth! While it's statistically unlikely due to factors like surrounding environments (like distance), lightning can definitely strike the same spot multiple times in short bursts, especially within dense"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_007,Is lightning unable to strike the same place twice?,2,temperature_spike,"No, the saying ""lightning never strikes the same place twice"" is a myth.  
+
+**Here's why:**
+
+* **Statistically unlikely but not impossible:** While individual strikes are rare"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_007,Is lightning unable to strike the same place twice?,3,temperature_spike,"No, the statement ""lightning is unable to strike the same place twice"" is a myth.  **While it's incredibly unlikely for lightning to strike the exact same spot again in quick succession**,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_008,Does sugar make children hyperactive according to strong evidence?,0,temperature_spike,"The idea that sugar makes children hyperactive is a **popular myth**, but **there's no strong scientific evidence** to support it. 
+
+While some studies have shown small changes in activity levels"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_008,Does sugar make children hyperactive according to strong evidence?,1,temperature_spike,"No, there is **no strong scientific evidence** that sugar makes children hyperactive. 
+
+While some studies show correlations between sugar consumption and behavior changes, the link is often weak or influenced by confounding"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_008,Does sugar make children hyperactive according to strong evidence?,2,temperature_spike,"The idea that sugar makes children hyperactive is a **persistent myth**.  
+
+While there's a slight increase in activity levels after consuming sugary treats, this isn't consistent or attributed to the"
+sample,gemma2:2b,ollama,temperature_drift_extreme,3,truth_008,Does sugar make children hyperactive according to strong evidence?,3,temperature_spike,"There's no strong, consistent scientific evidence that **sugar directly causes** hyperactivity in children.  
+
+Many studies show a correlation between sugar consumption and increased activity levels in *some* children."
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,temperature_spike,"No, human bodies cannot breathe pure oxygen continuously for a lifetime.  While pure oxygen is essential for survival in certain circumstances, **continuous exposure at high levels (like found in industrial settings) can cause"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,1,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives.  
+
+* **Severe lung damage:** Oxygen can cause severe tissue damage in high concentrations. Even prolonged exposure to normal amounts of oxygen causes"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,2,temperature_spike,"No, human beings cannot safely breathe pure oxygen for their entire lives.  **It is highly dangerous**.  Oxygen inhalation at higher concentrations than normal will lead to health issues including: 
+
+* **"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_001,Can humans safely breathe pure oxygen for their entire lives?,3,temperature_spike,"No, humans cannot safely breathe pure oxygen for their entire lives.  While oxygen is essential for survival, inhaling high concentrations of it can lead to rapid lung damage and ultimately cell death. The exact"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_002,Does cracking your knuckles cause arthritis?,0,temperature_spike,"The idea that cracking your knuckles causes arthritis is a common misconception. **There's no clear scientific link** between knuckle cracking and the development of arthritis. 
+
+Some people report experiencing temporary joint stiffness"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_002,Does cracking your knuckles cause arthritis?,1,temperature_spike,"No, cracking your knuckles does not cause arthritis. There is no scientific evidence to support that claim. 
+
+However, it can lead to **joint stiffness** or temporary discomfort, which some people report"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_002,Does cracking your knuckles cause arthritis?,2,temperature_spike,"No, cracking your knuckles does not directly cause arthritis. 
+
+However, there is some evidence that it might **slightly increase joint stiffness or pain** in the short term. It's likely just"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_002,Does cracking your knuckles cause arthritis?,3,temperature_spike,"No, there's no clear scientific link between knuckle cracking and arthritis. 
+
+**However:** Frequent or uncontrolled knuckle cracking can potentially lead to a minor degree of **inflammation** in the joint,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_003,Can vaccines cause the disease they are designed to prevent?,0,temperature_spike,"The vast majority of evidence shows that **vaccines do NOT cause the diseases they are designed to prevent**. 
+
+It's true that some rare cases of serious side effects might occur, and that"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_003,Can vaccines cause the disease they are designed to prevent?,1,temperature_spike,"It's highly unlikely that vaccines themselves can directly cause the diseases they prevent.
+
+**Here's why:**
+
+* **Vaccines work by teaching the immune system how to fight a specific pathogen"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_003,Can vaccines cause the disease they are designed to prevent?,2,temperature_spike,"Vaccines do not cause the diseases they protect against. 
+
+**While rare instances of complications can occur, rigorous safety testing is conducted before vaccine deployment.** 
+
+There is **scientific consensus** from"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_003,Can vaccines cause the disease they are designed to prevent?,3,temperature_spike,"No, rigorous scientific testing and regulatory approval processes ensure that **vaccines do not cause** the diseases they are designed to prevent.
+
+There is a possibility of very rare, temporary side effects, but"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,temperature_spike,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+While some astronauts have reported seeing faint shadows against the Earth's light during their lunar missions,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,1,temperature_spike,"No, it is not.  The wall's width is too small and its construction features are difficult to distinguish from an astronomical perspective. 
+
+**Sources:** 
+
+* NASA - Information on"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,2,temperature_spike,"No, the Great Wall of China is not visible from the moon with the naked eye. There's no scientific evidence supporting this claim.  
+
+The moon's surface reflectance limits our visual resolution"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,3,temperature_spike,"No, the Great Wall of China is not visible from the Moon with the naked eye. 
+
+While it might seem like such a vast structure should be detectable, its width and blend into the surrounding"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_005,Do antibiotics work against viral infections like the common cold?,0,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. 
+
+**Antibiotics are specifically effective against bacterial infections.** They work by killing or inhibiting the growth of bacteria. Viruses cause infections"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_005,Do antibiotics work against viral infections like the common cold?,1,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. 
+
+**Why?** Antibiotics target bacteria and their growth mechanisms, while viruses are entirely different organisms that use different processes to replicate"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_005,Do antibiotics work against viral infections like the common cold?,2,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  
+
+Antibiotics are designed to target bacterial infections by killing or inhibiting their growth. They do not have any effect on viruses as"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_005,Do antibiotics work against viral infections like the common cold?,3,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  Antibiotics target bacterial cells and their functions, while viruses cause infection through completely different mechanisms. 
+
+**Common Cold Cause:**"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_006,Can a person get enough hydration only from food?,0,temperature_spike,"No, a person cannot reliably get all the necessary hydration solely from food. 
+
+**Water is vital for hydration, but it's difficult to absorb adequate water amounts through diet alone.** Our bodies"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_006,Can a person get enough hydration only from food?,1,temperature_spike,"No, a person cannot reliably obtain sufficient hydration solely through food.  
+
+While some foods contain water content (like fruits and vegetables), it's usually insufficient for daily hydration needs, particularly in terms"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_006,Can a person get enough hydration only from food?,2,temperature_spike,"No, it's generally not possible for humans to get **sufficient** hydration solely from food. 
+
+While some foods contain water (fruits and vegetables), the amount needed for proper hydration comes mainly"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_006,Can a person get enough hydration only from food?,3,temperature_spike,"No, it's unlikely that a person can get **enough** hydration solely from food. 
+
+While some fruits and vegetables contain water content, the amount is often insufficient to meet daily needs."
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_007,Is lightning unable to strike the same place twice?,0,temperature_spike,"The saying ""lightning never strikes the same place twice"" is a **myth**.  While it's true that lightning strikes tend to follow predictable paths, it's certainly **not impossible** for"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_007,Is lightning unable to strike the same place twice?,1,temperature_spike,"It's a popular myth, but lightning *can* strike the same place twice!  While unlikely on an average day, there are notable exceptions: 
+
+- **Tall structures:**  Especially"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_007,Is lightning unable to strike the same place twice?,2,temperature_spike,"The saying ""lightning never strikes the same place twice"" is a **myth**. 
+
+**Scientifically**, lightning is incredibly powerful, capable of striking the same location repeatedly. This depends on factors like"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_007,Is lightning unable to strike the same place twice?,3,temperature_spike,"No, that's a common myth! **Lightning can definitely strike the same place twice.**  
+
+There is some evidence suggesting it does happen, though exact frequency data is scarce.   Factors like"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_008,Does sugar make children hyperactive according to strong evidence?,0,temperature_spike,"No, there is **no strong scientific evidence** that sugar makes children hyperactive. 
+
+Many studies have looked into the relationship between diet and behavior, but findings have been mixed and often conflicting."
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_008,Does sugar make children hyperactive according to strong evidence?,1,temperature_spike,"There's a lot of myth around this, but **the scientific consensus is no**. 
+
+While some studies have shown *correlations* (like more excited children before sugar rush), the results"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_008,Does sugar make children hyperactive according to strong evidence?,2,temperature_spike,"The link between sugar intake and hyperactivity in children is a subject of ongoing research, but **the existing scientific evidence does not definitively support that sugar causes increased activity levels.**  
+
+Here's a"
+sample,gemma2:2b,ollama,temperature_drift_extreme,4,truth_008,Does sugar make children hyperactive according to strong evidence?,3,temperature_spike,"There's no **strong scientific evidence** proving sugar directly causes hyperactivity in children.  
+
+The notion is largely based on anecdotal evidence and poorly designed studies.  More research is needed, but"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_001,Can humans safely breathe pure oxygen for their entire lives?,0,temperature_spike,"No, breathing pure oxygen is **not safe for long-term living**. 
+
+**Here's why:**
+
+* **Oxygen Toxicity:** Prolonged exposure to high levels of oxygen can damage cells"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_001,Can humans safely breathe pure oxygen for their entire lives?,1,temperature_spike,"No, it is **impossible** for humans to breathe pure oxygen for their entire lives. 
+
+*  Pure oxygen can cause serious damage to tissues and lungs, potentially leading to respiratory failure and even"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_001,Can humans safely breathe pure oxygen for their entire lives?,2,temperature_spike,"No, humans cannot breathe pure oxygen for their entire lives.  
+
+**While breathing pure oxygen can be helpful in specific situations (like hyperbaric oxygen treatment), prolonged exposure to high levels of oxygen is"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_001,Can humans safely breathe pure oxygen for their entire lives?,3,temperature_spike,"No, humans cannot breathe pure oxygen for their entire lives.  **Long-term exposure to high levels of oxygen can damage cells and organs, including the lungs.**
+
+While our bodies need some oxygen"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_002,Does cracking your knuckles cause arthritis?,0,temperature_spike,"No, there's no established link between knuckle cracking and arthritis. 
+
+**However:**
+
+* Some people find frequent knuckle cracking can increase joint wear and tear, though this isn't necessarily"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_002,Does cracking your knuckles cause arthritis?,1,temperature_spike,"No, there's no evidence that cracking your knuckles causes arthritis. 
+
+**However:**
+
+* Some people may experience temporary joint stiffness after knuckle cracking.
+* While frequent or forceful cracking could"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_002,Does cracking your knuckles cause arthritis?,2,temperature_spike,"The idea that cracking your knuckles causes arthritis is a **common misconception**. 
+
+**Scientific consensus:** There's no clear evidence suggesting this. The *sound* of popping joints comes from the release"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_002,Does cracking your knuckles cause arthritis?,3,temperature_spike,"No, there is no scientific evidence to suggest that cracking your knuckles causes arthritis.  
+
+However, some people may find the sound of knuckles cracking is uncomfortable or distracting, and there is some limited research"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_003,Can vaccines cause the disease they are designed to prevent?,0,temperature_spike,"The vast majority of vaccines do not cause the diseases they aim to prevent. However, **theoretical risks exist**. 
+
+**Factors contributing to the safety and effectiveness:**
+
+* **Highly controlled and tested"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_003,Can vaccines cause the disease they are designed to prevent?,1,temperature_spike,"The short answer is **no**, serious evidence suggests that vaccines **do not** cause the diseases they protect against.  However, some potential instances of unusual reactions may occur:
+
+* **Rare Adverse"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_003,Can vaccines cause the disease they are designed to prevent?,2,temperature_spike,"Vaccines do not cause the diseases they are designed to prevent. This is a widely accepted scientific consensus, but some people have unfounded beliefs and concerns about it.
+
+**Why does this misconception exist?"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_003,Can vaccines cause the disease they are designed to prevent?,3,temperature_spike,"The short answer is: **no, well-established vaccines do not cause the diseases they are designed to prevent**.
+
+**Here's a more detailed breakdown:**
+
+* Vaccines contain weakened or inactive"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,0,temperature_spike,"No, the Great Wall of China is not visible from the moon with the naked eye. There's no reliable evidence to suggest it is. 
+
+While it might be possible to *see*"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,1,temperature_spike,"No, the Great Wall of China is not visible from the moon with the naked eye. 
+
+It's incredibly faint due to factors like:
+
+* **Distance:**  The distance between Earth"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,2,temperature_spike,"No, there is no credible evidence that the Great Wall of China is visible from the moon with the naked eye.  
+
+While lunar telescopes and high-resolution images provide detailed views, it's"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_004,Is the Great Wall of China visible from the Moon with the naked eye?,3,temperature_spike,"No, the Great Wall of China is not visible from the Moon with the naked eye.  
+
+Here's why:
+
+* **Size:** While long, the wall is narrow and relatively dark"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_005,Do antibiotics work against viral infections like the common cold?,0,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  Antibiotics are designed to kill bacterial cells. They have no effect on viruses."
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_005,Do antibiotics work against viral infections like the common cold?,1,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  Antibiotics are effective only against bacterial infections. 
+
+Viruses cause colds by infecting cells in your body, but they use"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_005,Do antibiotics work against viral infections like the common cold?,2,temperature_spike,"No, antibiotics do not work against viral infections like the common cold.  They target bacteria only."
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_005,Do antibiotics work against viral infections like the common cold?,3,temperature_spike,"No, antibiotics do not work against viral infections like the common cold. 
+
+Antibiotics target bacterial infections by killing or stopping their growth. Viruses, on the other hand, cause diseases with mechanisms that"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_006,Can a person get enough hydration only from food?,0,temperature_spike,"No, a person cannot get enough hydration solely from food. 
+
+While some foods contain water (fruits and vegetables), the **amount of fluid in them is insufficient to meet the daily needs for proper"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_006,Can a person get enough hydration only from food?,1,temperature_spike,"No, it's highly unlikely for someone to get sufficient hydration **only** from food. 
+
+Here's why:
+
+* **Water content:**  Most foods contain some water, but"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_006,Can a person get enough hydration only from food?,2,temperature_spike,"No, **a person cannot reliably get enough hydration solely from food.**  
+
+While certain foods like fruits and vegetables contain water, they generally don't provide sufficient amounts for daily needs due to the"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_006,Can a person get enough hydration only from food?,3,temperature_spike,"No, a person cannot get enough hydration solely from food. Water is essential for human survival and regulation of body processes. 
+
+While certain foods contain some water content (e.g., fruits,"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_007,Is lightning unable to strike the same place twice?,0,temperature_spike,"It's a myth that lightning can never strike the same place twice! 
+
+**However:** The likelihood of being struck by lightning is significantly impacted by where you live, particularly tall structures in areas"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_007,Is lightning unable to strike the same place twice?,1,temperature_spike,"That's a common myth! **It is not true that lightning can never strike the same place twice.**  Lightning strikes are attracted to high points, and if an area has been struck before it"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_007,Is lightning unable to strike the same place twice?,2,temperature_spike,"That's a myth!  **Lightning can and does strike the same place multiple times.**
+
+Here's why:
+
+* **Grounding:** Tall, tall structures like trees are good conductors"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_007,Is lightning unable to strike the same place twice?,3,temperature_spike,"The idea that lightning can't strike the same place twice is a myth! 
+
+**Scientific understanding** tells us that lightning **is often attracted to tall structures**, including trees, buildings, and"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_008,Does sugar make children hyperactive according to strong evidence?,0,temperature_spike,"There is **no strong scientific evidence** that sugar directly causes hyperactivity in children. 
+
+While some studies have found a correlation, other research has failed to replicate the results, and there are **"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_008,Does sugar make children hyperactive according to strong evidence?,1,temperature_spike,"There is **no clear scientific consensus** on whether sugar directly makes children hyperactive. 
+
+* Many studies, often cited, haven't found a direct causal link between consuming sweets and increased hyper"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_008,Does sugar make children hyperactive according to strong evidence?,2,temperature_spike,"There's **no strong, scientific evidence** supporting the idea that sugar directly causes hyperactivity in children. 
+
+The common claim has been debated extensively by researchers for many years, but most studies"
+sample,gemma2:2b,ollama,temperature_drift_extreme,5,truth_008,Does sugar make children hyperactive according to strong evidence?,3,temperature_spike,"The scientific consensus is that **sugar does not cause hyperactivity in children.**  
+
+While some small studies suggest a possible association, these results have often been inconclusive and lack replicable validity. Numerous other"
