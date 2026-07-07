@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -25,6 +26,18 @@ st.sidebar.header("Experiment")
 mode = st.sidebar.radio("Mode", ["Synthetic MVP", "Captured outputs"])
 scenario = st.sidebar.selectbox("Scenario", ["all", *SCENARIOS])
 
+# Selectbox to toggle embedding backend
+embedding_backend = st.sidebar.selectbox(
+    "Embedding Backend",
+    ["Hashed Bag-of-Words (Fast)", "Sentence-Transformers (Premium)"]
+)
+
+if "Hashed" in embedding_backend:
+    os.environ["SENTINEL_EMBEDDINGS"] = "hashed"
+else:
+    os.environ["SENTINEL_EMBEDDINGS"] = "sentence-transformers"
+
+
 if mode == "Synthetic MVP":
     dataset = st.sidebar.selectbox("Dataset", ["sample", "truthfulqa", "gsm8k"])
     limit = st.sidebar.slider("Prompt limit", min_value=4, max_value=64, value=16, step=4)
@@ -35,16 +48,28 @@ if mode == "Synthetic MVP":
     prompt_preview = pd.DataFrame([case.__dict__ for case in cases]).head(10)
     st.caption(f"Synthetic mode. Dataset source: {dataset_label}. Prompt cases loaded: {len(cases)}.")
 else:
-    default_capture_path = REAL_MODEL_PATH if REAL_MODEL_PATH.exists() else CAPTURED_PATH
-    capture_path_text = st.sidebar.text_input("Captured CSV", str(default_capture_path))
-    capture_path = Path(capture_path_text)
+    outputs_dir = Path("outputs")
+    csv_files = []
+    if outputs_dir.exists():
+        # Scan for any CSV file ending with responses.csv
+        csv_files = sorted(list(outputs_dir.glob("*responses.csv")))
+    
+    if not csv_files:
+        csv_files = [REAL_MODEL_PATH if REAL_MODEL_PATH.exists() else CAPTURED_PATH]
+        
+    csv_options = [str(p) for p in csv_files]
+    selected_option = st.sidebar.selectbox("Select Captured Log", csv_options)
+    capture_path = Path(selected_option)
+    
     if not capture_path.exists():
         st.warning(f"Captured response file not found: {capture_path}")
         st.stop()
+        
     captured_rows = read_captured_response_rows(capture_path)
     rows = analyze_captured_rows(captured_rows)
     prompt_preview = pd.DataFrame(captured_rows)[["case_id", "question", "provider", "model"]].drop_duplicates().head(10)
     st.caption(f"Captured-output mode. Loaded {len(captured_rows)} raw monitored-model responses from {capture_path}.")
+
 
 metrics = compute_metrics(rows)
 df = pd.DataFrame(rows)
