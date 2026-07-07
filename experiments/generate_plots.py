@@ -60,18 +60,18 @@ def plot_ablation_comparison(csv_path: Path, output_path: Path) -> None:
     if df.empty:
         return
 
-    # Filter out full score or re-arrange for plotting
+
     df = df.sort_values("accuracy", ascending=False)
 
     plt.figure(figsize=(10, 5))
     colors = ["#2563eb" if x == "full_score" else "#6b7280" for x in df["variant"]]
 
-    # Clean variant names
+
     labels = [x.replace("_", " ").title() for x in df["variant"]]
 
     bars = plt.bar(labels, df["accuracy"], color=colors, width=0.6)
 
-    # Add accuracy values on top of bars
+
     for bar in bars:
         yval = bar.get_height()
         plt.text(
@@ -107,11 +107,11 @@ def plot_embedding_comparison(csv_path: Path, output_path: Path) -> None:
     if df.empty:
         return
 
-    # Re-structure data to plot side-by-side comparison
-    # We want scenario vs accuracy for each backend
+
+
     pivoted = df.pivot(index="scenario", columns="embedding_backend", values="accuracy")
 
-    # Re-order and clean index names
+
     pivoted.index = [x.replace("_", " ").title() for x in pivoted.index]
 
     plt.figure(figsize=(10, 5))
@@ -133,7 +133,7 @@ def plot_embedding_comparison(csv_path: Path, output_path: Path) -> None:
 
 
 def main() -> None:
-    # Synthetic MVP plots
+
     plot_reliability_over_time(
         csv_path=OUTPUT_DIR / "mvp_results.csv",
         output_path=OUTPUT_DIR / "reliability_over_time.png",
@@ -143,7 +143,7 @@ def main() -> None:
         output_path=OUTPUT_DIR / "ablation_comparison.png",
     )
 
-    # Real model plots
+
     plot_reliability_over_time(
         csv_path=OUTPUT_DIR / "real_model_analysis_results.csv",
         output_path=OUTPUT_DIR / "real_model_reliability_over_time.png",
@@ -153,7 +153,7 @@ def main() -> None:
         output_path=OUTPUT_DIR / "real_model_ablation_comparison.png",
     )
 
-    # Embedding benchmark plots
+
     plot_embedding_comparison(
         csv_path=OUTPUT_DIR / "embedding_benchmark_results.csv",
         output_path=OUTPUT_DIR / "embedding_comparison.png",

@@ -41,15 +41,15 @@ def mean(values: list[float]) -> float:
 
 def is_compliant(response: ModelResponse) -> bool:
     output = response.output.lower()
-    
-    # 1. Standard rules: too short or contains evasive catchphrases
+
+
     too_short = len(tokenize(output)) < 8
     evasive = "not enough information" in output or "unknown" in output
     generic = "everyone knows" in output or "needs no context" in output
     if too_short or evasive or generic:
         return False
-        
-    # 2. Dynamic word count constraints (e.g. "exactly X words")
+
+
     q_lower = response.question.lower()
     match_len = re.search(r"exactly (\d+) words", q_lower)
     if match_len:
@@ -57,8 +57,8 @@ def is_compliant(response: ModelResponse) -> bool:
         actual_len = len(tokenize(output))
         if actual_len != target_len:
             return False
-            
-    # 3. Dynamic start-letter constraints (e.g. "every single word must start with the letter 'X'")
+
+
     match_letter = re.search(r"every(?: single)? word must start with the letter '([a-z])'", q_lower)
     if match_letter:
         target_letter = match_letter.group(1)
@@ -68,7 +68,7 @@ def is_compliant(response: ModelResponse) -> bool:
         for token in tokens:
             if not token.startswith(target_letter):
                 return False
-                
+
     return True
 
 
@@ -86,7 +86,7 @@ def semantic_consistency_score(responses: list[ModelResponse]) -> float:
                 vec_l, comp_l = items[left_index]
                 vec_r, comp_r = items[right_index]
                 sim = cosine_similarity(vec_l, vec_r)
-                # Penalize consistency if either variant fails rule-based compliance
+
                 if not (comp_l and comp_r):
                     sim = -1.0
                 similarities.append(sim)
@@ -152,4 +152,3 @@ def extract_window_signals(
         "confidence_proxy": confidence_proxy_score(current_responses),
         "task_compliance": task_compliance_score(current_responses),
     }
-

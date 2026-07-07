@@ -24,16 +24,16 @@ def tokenize(text: str) -> list[str]:
 
 def embed_text(text: str) -> list[float]:
     backend = os.getenv("SENTINEL_EMBEDDINGS", "auto").strip().lower()
-    
+
     if backend == "hashed":
         return hashed_embedding(text)
-        
+
     if backend in {"sentence-transformer", "sentence-transformers", "st"}:
         return sentence_transformer_embedding(text)
-        
-    # Auto-detection mode: use Sentence-Transformers if installed, otherwise fall back to hashed BoW
+
+
     try:
-        from sentence_transformers import SentenceTransformer  # noqa: F401
+        from sentence_transformers import SentenceTransformer
         return sentence_transformer_embedding(text)
     except ImportError:
         return hashed_embedding(text)
@@ -65,7 +65,7 @@ def sentence_transformer_embedding(text: str) -> list[float]:
 @lru_cache(maxsize=1)
 def _sentence_transformer_model():
     try:
-        from sentence_transformers import SentenceTransformer  # type: ignore
+        from sentence_transformers import SentenceTransformer
     except ImportError as exc:
         raise RuntimeError(
             "sentence-transformers is not installed. Install it or unset SENTINEL_EMBEDDINGS."
@@ -92,10 +92,9 @@ def centroid(vectors: list[list[float]]) -> list[float]:
             center[index] += value
 
     avg_vector = [value / len(vectors) for value in center]
-    
-    # L2-normalize the centroid average vector
+
+
     norm = math.sqrt(sum(v * v for v in avg_vector))
     if norm == 0:
         return avg_vector
     return [v / norm for v in avg_vector]
-

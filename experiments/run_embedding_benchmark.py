@@ -26,17 +26,17 @@ BENCHMARK_RESULTS_PATH = OUTPUT_DIR / "embedding_benchmark_results.csv"
 def run_benchmark(dataset: str, limit: int, csv_path: Path | None = None) -> list[dict[str, object]]:
     cases = load_prompt_cases(source=dataset, limit=limit, csv_path=csv_path)
 
-    # 1. Evaluate with Hashed Bag-of-Words
+
     print("Evaluating with Hashed Bag-of-Words backend...", flush=True)
     os.environ["SENTINEL_EMBEDDINGS"] = "hashed"
     hashed_rows = run_all_experiments(cases=cases, dataset_label=dataset)
     hashed_metrics = compute_metrics(hashed_rows)
 
-    # 2. Evaluate with Sentence-Transformers
+
     print("Evaluating with Sentence-Transformers backend...", flush=True)
     os.environ["SENTINEL_EMBEDDINGS"] = "sentence-transformers"
     try:
-        from sentence_transformers import SentenceTransformer  # noqa: F401
+        from sentence_transformers import SentenceTransformer
     except ImportError:
         print(
             "Error: sentence-transformers is not installed. Please run `pip install sentence-transformers` first.",
@@ -47,7 +47,7 @@ def run_benchmark(dataset: str, limit: int, csv_path: Path | None = None) -> lis
     st_rows = run_all_experiments(cases=cases, dataset_label=dataset)
     st_metrics = compute_metrics(st_rows)
 
-    # 3. Combine results
+
     comparison_rows: list[dict[str, object]] = []
 
     for metric in hashed_metrics:
@@ -85,17 +85,17 @@ def run_captured_benchmark(captured_path: Path) -> list[dict[str, object]]:
 
     captured_rows = read_captured_response_rows(captured_path)
 
-    # 1. Evaluate Hashed Bag-of-Words
+
     print(f"Evaluating Hashed Bag-of-Words on captured responses from {captured_path}...", flush=True)
     os.environ["SENTINEL_EMBEDDINGS"] = "hashed"
     hashed_rows = analyze_captured_rows(captured_rows)
     hashed_metrics = compute_metrics(hashed_rows)
 
-    # 2. Evaluate Sentence-Transformers
+
     print(f"Evaluating Sentence-Transformers on captured responses from {captured_path}...", flush=True)
     os.environ["SENTINEL_EMBEDDINGS"] = "sentence-transformers"
     try:
-        from sentence_transformers import SentenceTransformer  # noqa: F401
+        from sentence_transformers import SentenceTransformer
     except ImportError:
         print(
             "Error: sentence-transformers is not installed. Please run `pip install sentence-transformers` first.",
@@ -106,7 +106,7 @@ def run_captured_benchmark(captured_path: Path) -> list[dict[str, object]]:
     st_rows = analyze_captured_rows(captured_rows)
     st_metrics = compute_metrics(st_rows)
 
-    # 3. Combine results
+
     comparison_rows: list[dict[str, object]] = []
 
     for metric in hashed_metrics:

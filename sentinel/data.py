@@ -177,7 +177,7 @@ def load_truthfulqa_cases(limit: int = 32) -> list[PromptCase]:
     while still supporting real data as soon as dependencies are installed.
     """
     try:
-        from datasets import load_dataset  # type: ignore
+        from datasets import load_dataset
     except ImportError:
         return [case_with_source(case, "sample_fallback") for case in SAMPLE_CASES[:limit]]
 
@@ -250,7 +250,7 @@ def load_gsm8k_cases(limit: int = 32) -> list[PromptCase]:
     or the model repository is unreachable.
     """
     try:
-        from datasets import load_dataset  # type: ignore
+        from datasets import load_dataset
     except ImportError:
         return [case_with_source(case, "gsm8k_fallback") for case in GSM8K_SAMPLE_CASES[:limit]]
 
@@ -286,4 +286,3 @@ def load_gsm8k_cases(limit: int = 32) -> list[PromptCase]:
             break
 
     return cases
-

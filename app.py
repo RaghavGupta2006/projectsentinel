@@ -112,7 +112,7 @@ if benchmark_csv.exists():
     comparison_df = pd.read_csv(benchmark_csv)
     st.dataframe(comparison_df, use_container_width=True)
 
-    # Let's add a visual bar chart comparing Accuracy by Scenario and Backend
+
     plot_df = comparison_df[comparison_df["scenario"] != "all"]
     if not plot_df.empty:
         chart_data = plot_df.pivot(index="scenario", columns="embedding_backend", values="accuracy")
@@ -131,6 +131,5 @@ st.write(
     "the selected CSV contains raw outputs from the model being monitored; Sentinel then "
     "computes reliability signals algorithmically."
 )
-
 
 
