@@ -1,8 +1,13 @@
 # Project Sentinel
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_svg.svg)](https://projectsentinel.streamlit.app/)
+
 Project Sentinel detects semantic reliability degradation in LLM-style outputs without requiring continuous ground-truth labels.
 
+**🔗 [Live Interactive Observability Dashboard](https://projectsentinel.streamlit.app/)**
+
 Sentinel is not an LLM judge. It does not ask a second model whether an answer is correct. It monitors the raw outputs of the model under observation and computes behavioral reliability signals such as semantic consistency, response stability, embedding drift, confidence proxies, and task compliance.
+
 
 ## Current Status
 
