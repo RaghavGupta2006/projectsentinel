@@ -1,4 +1,4 @@
-﻿"""Analyze captured monitored-model responses with Sentinel.
+"""Analyze captured monitored-model responses with Sentinel.
 
 This script computes Sentinel signals over already-captured model outputs. It does
 not call any LLM and does not perform answer verification.
@@ -52,10 +52,16 @@ def analyze_captured_rows(rows: list[dict[str, str]]) -> list[dict[str, object]]
         baseline_signals = extract_window_signals(baseline, baseline)
         baseline_score = score_window(baseline_signals)
 
+        history_scores: list[float] = []
         for window, window_responses in windows.items():
             signals = extract_window_signals(window_responses, baseline)
             reliability_score = score_window(signals)
             actual_degraded = window_responses[0].degradation != "none"
+            alert = detect_degradation(
+                reliability_score,
+                baseline_score,
+                history_scores=history_scores,
+            )
             output_rows.append(
                 {
                     "dataset": dataset,
@@ -70,9 +76,11 @@ def analyze_captured_rows(rows: list[dict[str, str]]) -> list[dict[str, object]]
                     "confidence_proxy": round(signals["confidence_proxy"], 4),
                     "task_compliance": round(signals["task_compliance"], 4),
                     "semantic_reliability_score": reliability_score,
-                    "degradation_alert": detect_degradation(reliability_score, baseline_score),
+                    "degradation_alert": alert,
                 }
             )
+            history_scores.append(reliability_score)
+
     return output_rows
 
 
