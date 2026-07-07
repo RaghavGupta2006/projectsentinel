@@ -1,8 +1,9 @@
-﻿"""Reliability signal extraction."""
+"""Reliability signal extraction."""
 
 from __future__ import annotations
 
 import math
+import re
 import statistics
 from collections import defaultdict
 
@@ -19,7 +20,15 @@ HEDGING_TERMS = {
     "complicated",
     "flexible",
     "incomplete",
+    "paradox",
+    "contradiction",
+    "impossible",
+    "loophole",
+    "illogical",
+    "undecidable",
+    "loop",
 }
+
 
 
 def clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
@@ -30,16 +39,57 @@ def mean(values: list[float]) -> float:
     return sum(values) / len(values) if values else 0.0
 
 
+def is_compliant(response: ModelResponse) -> bool:
+    output = response.output.lower()
+    
+    # 1. Standard rules: too short or contains evasive catchphrases
+    too_short = len(tokenize(output)) < 8
+    evasive = "not enough information" in output or "unknown" in output
+    generic = "everyone knows" in output or "needs no context" in output
+    if too_short or evasive or generic:
+        return False
+        
+    # 2. Dynamic word count constraints (e.g. "exactly X words")
+    q_lower = response.question.lower()
+    match_len = re.search(r"exactly (\d+) words", q_lower)
+    if match_len:
+        target_len = int(match_len.group(1))
+        actual_len = len(tokenize(output))
+        if actual_len != target_len:
+            return False
+            
+    # 3. Dynamic start-letter constraints (e.g. "every single word must start with the letter 'X'")
+    match_letter = re.search(r"every(?: single)? word must start with the letter '([a-z])'", q_lower)
+    if match_letter:
+        target_letter = match_letter.group(1)
+        tokens = tokenize(output)
+        if not tokens:
+            return False
+        for token in tokens:
+            if not token.startswith(target_letter):
+                return False
+                
+    return True
+
+
+
 def semantic_consistency_score(responses: list[ModelResponse]) -> float:
-    by_case: dict[str, list[list[float]]] = defaultdict(list)
+    by_case: dict[str, list[tuple[list[float], bool]]] = defaultdict(list)
     for response in responses:
-        by_case[response.case_id].append(embed_text(response.output))
+        compliant = is_compliant(response)
+        by_case[response.case_id].append((embed_text(response.output), compliant))
 
     similarities: list[float] = []
-    for vectors in by_case.values():
-        for left_index in range(len(vectors)):
-            for right_index in range(left_index + 1, len(vectors)):
-                similarities.append(cosine_similarity(vectors[left_index], vectors[right_index]))
+    for items in by_case.values():
+        for left_index in range(len(items)):
+            for right_index in range(left_index + 1, len(items)):
+                vec_l, comp_l = items[left_index]
+                vec_r, comp_r = items[right_index]
+                sim = cosine_similarity(vec_l, vec_r)
+                # Penalize consistency if either variant fails rule-based compliance
+                if not (comp_l and comp_r):
+                    sim = -1.0
+                similarities.append(sim)
 
     return clamp((mean(similarities) + 1.0) / 2.0)
 
@@ -86,16 +136,9 @@ def confidence_proxy_score(responses: list[ModelResponse]) -> float:
 
 
 def task_compliance_score(responses: list[ModelResponse]) -> float:
-    failures = 0
-    for response in responses:
-        output = response.output.lower()
-        too_short = len(tokenize(output)) < 8
-        evasive = "not enough information" in output or "unknown" in output
-        generic = "everyone knows" in output or "needs no context" in output
-        if too_short or evasive or generic:
-            failures += 1
-
+    failures = sum(1 for response in responses if not is_compliant(response))
     return clamp(1.0 - (failures / len(responses))) if responses else 0.0
+
 
 
 def extract_window_signals(

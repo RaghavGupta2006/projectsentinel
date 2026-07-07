@@ -1,4 +1,4 @@
-﻿"""Text embeddings for Project Sentinel.
+"""Text embeddings for Project Sentinel.
 
 Default backend: hashed bag-of-words vectors, fully offline.
 Optional backend: sentence-transformers when SENTINEL_EMBEDDINGS=sentence-transformers.
@@ -23,10 +23,21 @@ def tokenize(text: str) -> list[str]:
 
 
 def embed_text(text: str) -> list[float]:
-    backend = os.getenv("SENTINEL_EMBEDDINGS", "hashed").strip().lower()
+    backend = os.getenv("SENTINEL_EMBEDDINGS", "auto").strip().lower()
+    
+    if backend == "hashed":
+        return hashed_embedding(text)
+        
     if backend in {"sentence-transformer", "sentence-transformers", "st"}:
         return sentence_transformer_embedding(text)
-    return hashed_embedding(text)
+        
+    # Auto-detection mode: use Sentence-Transformers if installed, otherwise fall back to hashed BoW
+    try:
+        from sentence_transformers import SentenceTransformer  # noqa: F401
+        return sentence_transformer_embedding(text)
+    except ImportError:
+        return hashed_embedding(text)
+
 
 
 def hashed_embedding(text: str, dimensions: int = 128) -> list[float]:
@@ -80,4 +91,11 @@ def centroid(vectors: list[list[float]]) -> list[float]:
         for index, value in enumerate(vector):
             center[index] += value
 
-    return [value / len(vectors) for value in center]
+    avg_vector = [value / len(vectors) for value in center]
+    
+    # L2-normalize the centroid average vector
+    norm = math.sqrt(sum(v * v for v in avg_vector))
+    if norm == 0:
+        return avg_vector
+    return [v / norm for v in avg_vector]
+
