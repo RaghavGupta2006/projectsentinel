@@ -159,6 +159,9 @@ def condition_prompts(case: PromptCase, scenario: str, window: int) -> tuple[str
     raise ValueError(f"Unsupported scenario: {scenario}")
 
 
+import concurrent.futures
+from threading import Lock
+
 def capture_responses(
     client: ModelClient,
     cases: list[PromptCase],
@@ -167,37 +170,56 @@ def capture_responses(
     scenarios: list[str],
     windows: int,
     variants_per_case: int,
-    sleep_seconds: float,
+    workers: int = 4,
+    sleep_seconds: float = 0.0,
     progress_callback: ProgressCallback | None = None,
 ) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     total = len(scenarios) * windows * len(cases) * variants_per_case
     completed = 0
+    progress_lock = Lock()
 
+    tasks = []
     for scenario in scenarios:
         for window in range(1, windows + 1):
             for case in cases:
                 for variant in range(variants_per_case):
-                    system_prompt, user_prompt, temperature, degradation = condition_prompts(case, scenario, window)
-                    output = client.generate(system_prompt, user_prompt, temperature)
-                    row = {
-                        "dataset": dataset_label,
-                        "model": model,
-                        "provider": client.provider_name,
-                        "scenario": scenario,
-                        "window": window,
-                        "case_id": case.case_id,
-                        "question": case.question,
-                        "variant": variant,
-                        "degradation": degradation,
-                        "output": output,
-                    }
-                    rows.append(row)
-                    completed += 1
-                    if progress_callback is not None:
-                        progress_callback(completed, total, row)
-                    if sleep_seconds > 0:
-                        time.sleep(sleep_seconds)
+                    tasks.append((scenario, window, case, variant))
+
+    def process_task(task):
+        nonlocal completed
+        scenario, window, case, variant = task
+        system_prompt, user_prompt, temperature, degradation = condition_prompts(case, scenario, window)
+        output = client.generate(system_prompt, user_prompt, temperature)
+        row = {
+            "dataset": dataset_label,
+            "model": model,
+            "provider": client.provider_name,
+            "scenario": scenario,
+            "window": window,
+            "case_id": case.case_id,
+            "question": case.question,
+            "variant": variant,
+            "degradation": degradation,
+            "output": output,
+        }
+        with progress_lock:
+            completed += 1
+            if progress_callback is not None:
+                progress_callback(completed, total, row)
+        return row
+
+    if workers > 1:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+            results = list(executor.map(process_task, tasks))
+            rows = [r for r in results if r is not None]
+    else:
+        for task in tasks:
+            row = process_task(task)
+            rows.append(row)
+            if sleep_seconds > 0:
+                time.sleep(sleep_seconds)
+
     return rows
 
 
@@ -221,6 +243,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--scenario", choices=["all", *SCENARIOS], default="all")
     parser.add_argument("--windows", type=int, default=6)
     parser.add_argument("--variants-per-case", type=int, default=2)
+    parser.add_argument("--workers", type=int, default=4, help="Number of parallel thread workers.")
     parser.add_argument("--sleep-seconds", type=float, default=0.0)
     parser.add_argument("--quiet", action="store_true")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -240,9 +263,11 @@ def main() -> None:
         scenarios=scenarios,
         windows=args.windows,
         variants_per_case=args.variants_per_case,
+        workers=args.workers,
         sleep_seconds=args.sleep_seconds,
         progress_callback=None if args.quiet else print_capture_progress,
     )
+
     write_captured_responses(args.output, rows)
     print(f"Captured {len(rows)} monitored-model responses to {args.output}")
     print("No LLM judge was used; these are raw outputs from the monitored model path.")
