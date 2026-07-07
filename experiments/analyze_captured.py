@@ -61,6 +61,7 @@ def analyze_captured_rows(rows: list[dict[str, str]]) -> list[dict[str, object]]
                 reliability_score,
                 baseline_score,
                 history_scores=history_scores,
+                zscore_k=2.0,
             )
             output_rows.append(
                 {
