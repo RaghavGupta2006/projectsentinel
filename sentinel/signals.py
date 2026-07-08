@@ -41,17 +41,20 @@ def mean(values: list[float]) -> float:
 
 def is_compliant(response: ModelResponse) -> bool:
     output = response.output.lower()
+    q_lower = response.question.lower()
+    match_len = re.search(r"exactly (\d+) words", q_lower)
 
+    too_short = False
+    if not match_len:
+        too_short = len(tokenize(output)) < 8
 
-    too_short = len(tokenize(output)) < 8
     evasive = "not enough information" in output or "unknown" in output
     generic = "everyone knows" in output or "needs no context" in output
     if too_short or evasive or generic:
         return False
 
 
-    q_lower = response.question.lower()
-    match_len = re.search(r"exactly (\d+) words", q_lower)
+
     if match_len:
         target_len = int(match_len.group(1))
         actual_len = len(tokenize(output))

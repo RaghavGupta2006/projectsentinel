@@ -190,7 +190,13 @@ def capture_responses(
         nonlocal completed
         scenario, window, case, variant = task
         system_prompt, user_prompt, temperature, degradation = condition_prompts(case, scenario, window)
-        output = client.generate(system_prompt, user_prompt, temperature)
+        try:
+            output = client.generate(system_prompt, user_prompt, temperature)
+        except Exception as e:
+            with progress_lock:
+                print(f"Error querying model for case {case.case_id} (Window {window}): {e}", file=sys.stderr)
+            return None
+            
         row = {
             "dataset": dataset_label,
             "model": model,
@@ -216,7 +222,8 @@ def capture_responses(
     else:
         for task in tasks:
             row = process_task(task)
-            rows.append(row)
+            if row is not None:
+                rows.append(row)
             if sleep_seconds > 0:
                 time.sleep(sleep_seconds)
 
